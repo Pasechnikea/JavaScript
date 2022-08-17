@@ -1,0 +1,68 @@
+
+.searchbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    gap: 8px;
+    width: 256px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #459DF5;
+    border-radius: 4px;
+}
+
+.searchbar .buttonFind {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    background-image: url("icons/search_ed.svg");
+}
+
+.searchbar .edField {
+    width: 177px;
+    height: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    border-width: 0;
+}
+
+.searchbar .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.searchbar .button .buttonClear {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    background-image: url("icons/x-medium_ed.svg");
+}
+
+.searchbar.empty .buttonClear {
+    background-image: none;
+}

@@ -1,0 +1,42 @@
+.table-flex {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-flex__head {
+
+}
+
+.table-flex--sticky__head .table-flex__head {
+    position: sticky;
+    top: 0px;
+}
+
+.table-flex__body {
+
+}
+
+.table-flex__foot {
+
+}
+
+.table-flex--sticky__foot .table-flex__foot {
+    position: sticky;
+    bottom: 0px;
+}
+
+.table-flex__row {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    height: 40px;
+
+
+}
+
+.table-flex__cell {
+    width: 100%;
+    flex: 1 1 auto;
+}

@@ -1,0 +1,104 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    height: 56px;
+}
+
+.input .label {
+    height: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.input .field {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    gap: 4px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #459DF5;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.input.incorrect .field {
+    border: 1px solid #F53152;
+
+}
+
+.input.disabled .field {
+    background: #BAD8F5;
+    border: 1px solid #459DF5;
+}
+
+.input .edField {
+    width:  calc(100% - 34px);
+    height: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    border-width: 0;
+    background: transparent;
+}
+
+.input.disabled .edField {
+    pointer-events: none;
+}
+
+.input .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4px;
+    gap: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.input .button .ico {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.input.incorrect .button .ico{
+    background-image: url(icons/x-medium_ed.svg);
+}
+
+.input.disabled .button .ico{
+    background-image: url("icons/locked_ed.svg");
+}

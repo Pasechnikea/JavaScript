@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="../elements/_elements.css">
+    <style>
+
+        .table-flex__head .table-flex__cell {
+            height: 40px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 40px;
+            background: #459DF5;
+            color: #FFFFFF;
+        }
+
+        .table-flex__body .table-flex__row {
+            border-bottom: 1px lightgrey solid;
+        }
+
+        .table-flex__cell {
+            padding-left: 5px;
+        }
+
+        .table-flex__body .table-flex__cell {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 40px;
+            color: #000000;
+        }
+
+        .table-flex__foot .table-flex__cell {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 40px;
+            background: #EBF0F5;
+            color: #000000;
+        }
+
+
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(1) {
+            min-width: 50px;
+            max-width: 50px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(2) {
+            min-width: 75px;
+            max-width: 75px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(3) {
+            min-width: 150px;
+            max-width: 150px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(4) {
+            min-width: 120px;
+            max-width: 120px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(5) {
+            min-width: 85px;
+            max-width: 85px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(6) {
+            min-width: 125px;
+            max-width: 125px;
+        }
+
+        .table-flex .table-flex__row .table-flex__cell:nth-child(7) {
+            min-width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="table-flex table-flex--sticky__head table-flex--sticky__foot">
+    <div class="table-flex__head">
+        <div class="table-flex__row">
+            <div class="table-flex__cell">
+                <div class="checkbox">
+                    <input type="checkbox" id="c-all"><label for="c-all"></label>
+                </div>
+            </div>
+            <div class="table-flex__cell">
+                #
+            </div>
+            <div class="table-flex__cell" style="display: flex; flex-direction: row">
+                Дата
+            </div>
+            <div class="table-flex__cell">
+                Статус
+            </div>
+            <div class="table-flex__cell">
+                Позиций
+            </div>
+            <div class="table-flex__cell">
+                Сумма
+            </div>
+            <div class="table-flex__cell">
+                ФИО покупателя
+            </div>
+        </div>
+    </div>
+    <div class="table-flex__body">
+
+
+
+
+
+
+        <div class="table-flex__row">
+            <div class="table-flex__cell">
+                <div class="checkbox">
+                    <input type="checkbox" id="c1"><label for="c1"></label>
+                </div>
+            </div>
+            <div class="table-flex__cell">
+                1270989
+            </div>
+            <div class="table-flex__cell">
+                12.2.2021, 18:0
+            </div>
+            <div class="table-flex__cell">
+                Новый
+            </div>
+            <div class="table-flex__cell">
+                6
+            </div>
+            <div class="table-flex__cell">
+                101907 р
+            </div>
+            <div class="table-flex__cell">
+                Чернышев Филипп Семёнович
+            </div>
+        </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c2"><label for="c2"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            2353474
+        </div>
+        <div class="table-flex__cell">
+            12.3.2021, 5:15
+        </div>
+        <div class="table-flex__cell">
+            Новый
+        </div>
+        <div class="table-flex__cell">
+            2
+        </div>
+        <div class="table-flex__cell">
+            98003 р
+        </div>
+        <div class="table-flex__cell">
+            Филиппов Степан Васильевич
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c3"><label for="c3"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            1103397
+        </div>
+        <div class="table-flex__cell">
+            3.2.2021, 8:4
+        </div>
+        <div class="table-flex__cell">
+            Рассчет
+        </div>
+        <div class="table-flex__cell">
+            5
+        </div>
+        <div class="table-flex__cell">
+            3800 р
+        </div>
+        <div class="table-flex__cell">
+            Тихонова Алина Давидовна
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c4"><label for="c4"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            6924662
+        </div>
+        <div class="table-flex__cell">
+            21.1.2021, 13:32
+        </div>
+        <div class="table-flex__cell">
+            Выполнен
+        </div>
+        <div class="table-flex__cell">
+            1
+        </div>
+        <div class="table-flex__cell">
+            5700 р
+        </div>
+        <div class="table-flex__cell">
+            Александрова Юлия Никитична
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c5"><label for="c5"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            2200086
+        </div>
+        <div class="table-flex__cell">
+            19.1.2021, 10:28
+        </div>
+        <div class="table-flex__cell">
+            Отменен
+        </div>
+        <div class="table-flex__cell">
+            -
+        </div>
+        <div class="table-flex__cell">
+            - р
+        </div>
+        <div class="table-flex__cell">
+            Андрей
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c6"><label for="c6"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            2842064
+        </div>
+        <div class="table-flex__cell">
+            4.1.2021, 12:12
+        </div>
+        <div class="table-flex__cell">
+            Отложен
+        </div>
+        <div class="table-flex__cell">
+            1
+        </div>
+        <div class="table-flex__cell">
+            20500 р
+        </div>
+        <div class="table-flex__cell">
+            Судакова Анастасия Ильинична
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c7"><label for="c7"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            1730071
+        </div>
+        <div class="table-flex__cell">
+            17.12.2021, 22:45
+        </div>
+        <div class="table-flex__cell">
+            Выполнен
+        </div>
+        <div class="table-flex__cell">
+            1
+        </div>
+        <div class="table-flex__cell">
+            1399 р
+        </div>
+        <div class="table-flex__cell">
+            Зверева Арина Николаевна
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c8"><label for="c8"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            7987376
+        </div>
+        <div class="table-flex__cell">
+            7.12.2020, 8:57
+        </div>
+        <div class="table-flex__cell">
+            Выполнен
+        </div>
+        <div class="table-flex__cell">
+            3
+        </div>
+        <div class="table-flex__cell">
+            117810 р
+        </div>
+        <div class="table-flex__cell">
+            Карташов Максим Кириллович
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c9"><label for="c9"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            1373265
+        </div>
+        <div class="table-flex__cell">
+            15.11.2020, 14:26
+        </div>
+        <div class="table-flex__cell">
+            Выполнен
+        </div>
+        <div class="table-flex__cell">
+            1
+        </div>
+        <div class="table-flex__cell">
+            17008 р
+        </div>
+        <div class="table-flex__cell">
+            Васильев Вадим Даниилович
+        </div>
+    </div>        <div class="table-flex__row">
+        <div class="table-flex__cell">
+            <div class="checkbox">
+                <input type="checkbox" id="c10"><label for="c10"></label>
+            </div>
+        </div>
+        <div class="table-flex__cell">
+            1311100
+        </div>
+        <div class="table-flex__cell">
+            7.11.2020, 18:52
+        </div>
+        <div class="table-flex__cell">
+            Отменен
+        </div>
+        <div class="table-flex__cell">
+            -
+        </div>
+        <div class="table-flex__cell">
+            - р
+        </div>
+        <div class="table-flex__cell">
+            София
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="table-flex__foot">
+        <div class="table-flex__row">
+            <div class="table-flex__cell">
+                Итого
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+            <div class="table-flex__cell">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

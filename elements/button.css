@@ -1,0 +1,108 @@
+.button-text,
+.button-ico-text,
+.button-ico
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6px 16px;
+    gap: 8px;
+    height: 32px;
+    border: transparent 2px solid;
+    background: #459DF5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-text.width-all,
+.button-ico-text.width-all,
+.button-ico.width-all {
+    width: 100%;
+}
+.button-text.reverse,
+.button-ico-text.reverse,
+.button-ico.reverse,
+.button-text.black-reverse,
+.button-ico-text.black-reverse,
+.button-ico.black-reverse {
+    background: none;
+}
+
+.button-text.small,
+.button-ico-text.small,
+.button-ico.small {
+    padding: 2px 8px;
+    height: 24px;
+}
+
+.button-text:hover,
+.button-ico-text:hover,
+.button-ico:hover {
+    border-color: blue;
+}
+
+.button-text.black-reverse:hover,
+.button-ico-text.black-reverse:hover,
+.button-ico.black-reverse:hover {
+    border-color: black;
+}
+
+.button-ico .ico,
+.button-ico-text .ico {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.button-ico .ico,
+.button-ico-text .ico {
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+
+.button-ico.reverse .ico,
+.button-ico-text.reverse .ico {
+    stroke: #459DF5;
+    fill: #459DF5;
+}
+
+.button-ico.black-reverse .ico,
+.button-ico-text.black-reverse .ico {
+    fill: #000000;
+    stroke: #000000;
+}
+
+.button-ico .text{
+    display: none;
+}
+
+.button-text .ico {
+    display: none;
+}
+
+.button-text .text,
+.button-ico-text .text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.button-text.reverse .text,
+.button-ico-text.reverse .text {
+    color: #459DF5;
+}
+
+.button-text.black-reverse .text,
+.button-ico-text.black-reverse .text {
+    color: #000000;
+}

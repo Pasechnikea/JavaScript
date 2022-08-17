@@ -1,0 +1,35 @@
+
+.checkbox input[type="checkbox"]:checked,
+.checkbox input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox input[type="checkbox"]:checked + label,
+.checkbox input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before,
+.checkbox input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #BAD8F5;
+    border-radius: 2px;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+    background: #459DF5;
+    background-image: url("icons/checkmark_ed.svg");
+}
+
+
