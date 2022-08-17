@@ -6,6 +6,4 @@
 @import "./dropdown.css";
 @import "./pageheader.css";
 @import "./table-flex.css";
-* {
-  border: red 1px solid;
-}
+
