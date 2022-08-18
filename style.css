@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 * {
 border: red 1px solid;
 }
 
+=======
+@import "/elements/_elements.css";
+    
+>>>>>>> 5ad1ed572c44370a11d5472e8cead51e527ab84f
 body {
     margin: 15px 48px;
     min-width: 550px;
